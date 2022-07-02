@@ -394,3 +394,16 @@ end)
 )
 
 local site = serv:Channel("cheatglobal.com")
+
+while true do
+    local args = {
+    [1] = "Trolling42",
+    [2] = "S€x Hub Tapping",
+    [3] = false,
+    [5] = false,
+    [6] = true
+}
+
+game:GetService("ReplicatedStorage").Events.PlayerChatted:FireServer(unpack(args))
+    wait(10)
+end
