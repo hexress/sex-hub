@@ -1,5 +1,5 @@
 game:GetService("StarterGui"):SetCore("SendNotification",{
-Title = "sêx hub Loaded",
+Title = "sêx hub loaded",
 Text = "www.cheatglobal.com", 
 
 Button1 = "ok",
