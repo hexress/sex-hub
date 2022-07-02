@@ -110,7 +110,7 @@ end)
 local vsls = serv:Channel("Visuals")
 
 vsls:Button(
-    "Player ESP",
+    "Player ESP (Not Working With KRNL)",
     function()
         DiscordLib:Notification("Enabled Feature:", "Player ESP", "Okay")
 	assert(Drawing, "missing function/library: drawing");
