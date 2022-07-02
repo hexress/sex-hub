@@ -75,7 +75,7 @@ local method = getnamecallmethod()
 local args = {...}
 if string.find(method,'Ray') then
 if target then
-args[2] = Ray.new(workspace.CurrentCamera.CFrame.Position, (target + Vector3.new(0,(workspace.CurrentCamera.CFrame.Position-target).Magnitude/2000,0) - workspace.CurrentCamera.CFrame.Position).unit * 500)
+args[2] = Ray.new(workspace.CurrentCamera.CFrame.Position, (target + Vector3.new(0,(workspace.CurrentCamera.CFrame.Position-target).Magnitude/2000,0) - workspace.CurrentCamera.CFrame.Position).unit * 2000)
 end
 end
 return oldNamecall(unpack(args))
