@@ -242,6 +242,23 @@ end)
     end
 )
 
+misc:Button(
+    "Noclip",
+    function()
+            DiscordLib:Notification("Enabled Feature:", "Noclip", "Okay")
+		local runservice = game:GetService("RunService")
+
+local player = game:GetService("Players").LocalPlayer
+runservice.Stepped:Connect(function()
+    for i,v in pairs(player.Character:GetDescendants()) do
+        if v:IsA("BasePart") then
+            v.CanCollide = false
+        end
+    end
+end)
+    end
+)
+
 local site = serv:Channel("cheatglobal.com")
 
 while true do
