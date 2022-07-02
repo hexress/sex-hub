@@ -13,7 +13,7 @@ local DiscordLib =
 
 local win = DiscordLib:Window("sêx hub")
 
-local serv = win:Server("Main", "")
+local serv = win:Server("Arsenal", "")
 
 local btns = serv:Channel("Aimbot")
 
