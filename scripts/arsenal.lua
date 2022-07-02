@@ -97,6 +97,16 @@ end)
     end
 )
 
+    btns:Slider(
+    "Hitchance",
+    50,
+    100,
+    75,
+    function(t)
+        print(t)
+    end
+)
+
 local vsls = serv:Channel("Visuals")
 
 vsls:Button(
