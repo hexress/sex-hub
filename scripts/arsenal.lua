@@ -103,7 +103,7 @@ vsls:Button(
     "Player ESP",
     function()
         DiscordLib:Notification("Enabled Feature:", "Player ESP", "Okay")
-		assert(Drawing, "missing function/library: drawing");
+	assert(Drawing, "missing function/library: drawing");
 
 -- services
 local run_service = game:GetService("RunService");
@@ -140,8 +140,6 @@ local function create_esp(player)
     esp.tracer.Color = new_color3(23, 23, 23);
     esp.tracer.Thickness = 1;
     esp.tracer.Visible = false;
-	esp.tracer.size = 14;
-	esp.tracer.Font = Drawing.Fonts.Plex
 
     esp.name = new_drawing("Text");
     esp.name.Color = new_color3(23, 23, 23);
