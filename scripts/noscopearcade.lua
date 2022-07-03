@@ -8,6 +8,8 @@ Duration = 10
 
 wait(1)
 
+game.StarterGui:SetCore( "ChatMakeSystemMessage",  { Text = "[SYSTEM] Anticheat Succesfully Bypassed", Color = Color3.fromRGB( 255,0,0 ), Font = Enum.Font.Arial, FontSize = Enum.FontSize.Size24 } )
+
 local DiscordLib =
     loadstring(game:HttpGet "https://raw.githubusercontent.com/hexress/sex-hub/main/uilib")()
 
