@@ -35,7 +35,7 @@ vsls:Button(
     end
 )
 
-local msc = serv:Channel("Misc")
+local msc = serv:Channel("Miscellaneous")
 
 msc:Button(
     "Fly (Press X For Toggle)",
