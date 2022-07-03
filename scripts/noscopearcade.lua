@@ -56,6 +56,17 @@ msc:Button(
 )
 
 msc:Button(
+    "Speedhack",
+    function()
+            DiscordLib:Notification("Enabled Feature:", "Speedhack", "Okay")
+            while true do
+wait (0.5)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 80
+end
+    end
+)
+
+msc:Button(
     "Airjump",
     function()
             DiscordLib:Notification("Enabled Feature:", "Airjump", "Okay")
