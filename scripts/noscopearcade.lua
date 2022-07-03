@@ -72,3 +72,10 @@ msc:Button(
 )
 
 local site = serv:Channel("cheatglobal.com")
+
+local args = {
+    [1] = "S€x Hub Hittin' Hard",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
