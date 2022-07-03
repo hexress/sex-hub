@@ -243,26 +243,9 @@ end)
 )
 
 misc:Button(
-    "Noclip",
+    "Fly (Press X For Toggle)",
     function()
-            DiscordLib:Notification("Enabled Feature:", "Noclip", "Okay")
-		local runservice = game:GetService("RunService")
-
-local player = game:GetService("Players").LocalPlayer
-runservice.Stepped:Connect(function()
-    for i,v in pairs(player.Character:GetDescendants()) do
-        if v:IsA("BasePart") then
-            v.CanCollide = false
-        end
-    end
-end)
-    end
-)
-
-misc:Button(
-    "Noclip",
-    function()
-            DiscordLib:Notification("Enabled Feature:", "Noclip", "Okay")
+            DiscordLib:Notification("Enabled Feature:", "Fly", "Okay")
 		local User = game:GetService("UserInputService")
 local player = game:GetService("Players").LocalPlayer
 local GuiService = game:GetService("StarterGui")
@@ -422,6 +405,23 @@ User.InputEnded:Connect(function(inputObject)
    if(inputObject.KeyCode==Enum.KeyCode.Space) then
        holdingSpaceKey = false SpaceHeld = false
    end
+end)
+    end
+)
+
+misc:Button(
+    "Noclip",
+    function()
+            DiscordLib:Notification("Enabled Feature:", "Noclip", "Okay")
+		local runservice = game:GetService("RunService")
+
+local player = game:GetService("Players").LocalPlayer
+runservice.Stepped:Connect(function()
+    for i,v in pairs(player.Character:GetDescendants()) do
+        if v:IsA("BasePart") then
+            v.CanCollide = false
+        end
+    end
 end)
     end
 )
