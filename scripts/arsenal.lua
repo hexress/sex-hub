@@ -32,7 +32,7 @@ local RunService = game:GetService("RunService")
 
 local features = {
 silentaim = true;
-fov = 20000;
+fov = 999999;
 }
 
 function getnearest()
@@ -46,7 +46,7 @@ local vector, onScreen = Camera:WorldToScreenPoint(v.Character["HumanoidRootPart
 if onScreen then
 local ray = Ray.new(
 Camera.CFrame.p,
-(v.Character["Head"].Position-Camera.CFrame.p).unit*20000
+(v.Character["Head"].Position-Camera.CFrame.p).unit*999999
 )
 local ignore = {
 LocalPlayer.Character,
@@ -75,7 +75,7 @@ local method = getnamecallmethod()
 local args = {...}
 if string.find(method,'Ray') then
 if target then
-args[2] = Ray.new(workspace.CurrentCamera.CFrame.Position, (target + Vector3.new(0,(workspace.CurrentCamera.CFrame.Position-target).Magnitude/20000,0) - workspace.CurrentCamera.CFrame.Position).unit * 20000)
+args[2] = Ray.new(workspace.CurrentCamera.CFrame.Position, (target + Vector3.new(0,(workspace.CurrentCamera.CFrame.Position-target).Magnitude/999999,0) - workspace.CurrentCamera.CFrame.Position).unit * 999999)
 end
 end
 return oldNamecall(unpack(args))
