@@ -45,7 +45,7 @@ msc:Button(
     end
 )
 
-exp:Button(
+msc:Button(
     "Airjump",
     function()
             DiscordLib:Notification("Enabled Feature:", "Airjump", "Okay")
