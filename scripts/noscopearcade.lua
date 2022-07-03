@@ -25,6 +25,14 @@ btns:Button(
     end
 )
 
+btns:Button(
+    "Aimbot (Hold Right Mouse Button)",
+    function()
+            DiscordLib:Notification("Enabled Feature:", "Aimbot", "Okay")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/hexress/sex-hub/main/scripts/special/Aimbot.lua"))();
+    end
+)
+
 local vsls = serv:Channel("Visuals")
 
 vsls:Button(
