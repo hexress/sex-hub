@@ -21,7 +21,7 @@ btns:Button(
     "Silent Aim",
     function()
             DiscordLib:Notification("Enabled Feature:", "Silent Aim", "Okay")
-		--Made by DarkFunder
+		-- made by sex hub
 
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
