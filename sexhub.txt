@@ -4,6 +4,6 @@ elseif game.PlaceId == 292439477 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/hexress/sex-hub/main/scripts/phantomforces.lua"))();
 elseif game.PlaceId == 6407649031 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/hexress/sex-hub/main/scripts/noscopearcade.lua"))();
-else
+elseif game.PlaceId not == 6407649031, 292439477, 286090429
 game.Players.LocalPlayer:Kick(This game is not supported)    
 end
