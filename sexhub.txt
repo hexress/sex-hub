@@ -5,5 +5,5 @@ elseif game.PlaceId == 292439477 then
 elseif game.PlaceId == 6407649031 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/hexress/sex-hub/main/scripts/noscopearcade.lua"))();
 else
-    game.Players.LocalPlayer:Kick("This game is not supported")    
+    game.Players.LocalPlayer:Kick("This game is not supported | discord.gg/Hef2UG4FJZ")    
 end
